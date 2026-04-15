@@ -1,0 +1,161 @@
+:root {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #2d2431;
+  background: #f8f1f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 620px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 35px rgba(90, 56, 77, 0.15);
+}
+
+.label {
+  margin: 0;
+  color: #7d4f69;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.description {
+  color: #5b4f58;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+}
+
+.guest-card {
+  border: 1px solid #eadbe3;
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.guest-card h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #d8c5d1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+}
+
+button {
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #8f4f71;
+  color: #ffffff;
+}
+
+button:hover {
+  background: #7b4362;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.secondary {
+  background: #d8c5d1;
+  color: #2d2431;
+}
+
+.secondary:hover {
+  background: #c5afbc;
+}
+
+.category {
+  border: 1px solid #eadbe3;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.category legend {
+  padding: 0 6px;
+  font-weight: 700;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 6px 10px;
+}
+
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.check input {
+  width: auto;
+  margin-top: 4px;
+}
+
+.remove-guest {
+  width: fit-content;
+  margin-top: 0;
+  background: #b85f6c;
+}
+
+.remove-guest:hover {
+  background: #a14f5b;
+}
+
+.status {
+  min-height: 20px;
+  margin: 0;
+  font-size: 14px;
+  color: #6b5d66;
+}

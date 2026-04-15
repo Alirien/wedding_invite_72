@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <p class="label">Свадебное приглашение</p>
+        <h1>Будем рады разделить с вами наш день</h1>
+        <p class="description">
+          Добавьте одного или нескольких гостей и отметьте блюда по категориям.
+          Можно выбирать несколько салатов, горячих и других позиций.
+        </p>
+
+        <form id="menu-form" class="form">
+          <div id="guests"></div>
+
+          <div class="actions">
+            <button type="button" id="add-guest" class="secondary">+ Добавить гостя</button>
+            <button type="submit">Отправить выбор</button>
+          </div>
+
+          <label>
+            <span>Комментарий (по желанию)</span>
+            <textarea
+              name="comment"
+              rows="3"
+              placeholder="Например, у одного гостя аллергия на орехи"
+            ></textarea>
+          </label>
+
+          <p id="status" class="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
